@@ -1,6 +1,12 @@
 
 let submitQuery = document.getElementById("search")
-let localStorageArray = JSON.parse(localStorage.getItem("watchlist"))
+
+let localStorageArray = [] 
+
+if(JSON.parse(localStorage.getItem("watchlist"))){
+localStorageArray = JSON.parse(localStorage.getItem("watchlist"))
+}
+
 let movie = "transit"
 let posterArr = []
 
